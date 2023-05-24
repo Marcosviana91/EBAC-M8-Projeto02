@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Agenda</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <form>
-            <input type="text" placeholder="Nome">
-            <input type="tel" id="" placeholder="(xx) x.xxxx-xxxx">
-        </form>
-    </header>
+        <div class="container">
+            <form>
+                <label>Nome: 
+                    <input type="text" id="name" placeholder="Nome">
+                </label>
+                <label>Telefone: 
+                    <input type="tel" id="tel" placeholder="apenas números" maxlength="11">
+                </label>
+                <button id="btn_add">Cadastrar</button>
+            </form>
+        </div>
+        </header>
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <td>Nome:</td>
-                    <td>Telefone:</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Fulano de Tal</td>
-                    <td>(99) 9.8765-4321</td>
-                </tr>
-            </tbody>
-        </table>
+        <h1> Agenda de Contatos</h1>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nome:</td>
+                        <td>Telefone:</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fulano de Tal</td>
+                        <td>(99) 9.8765-4321</td>
+                    </tr>
+                    <tr>
+                        <td>Fulano de Tal</td>
+                        <td>(99) 9.8765-4321</td>
+                    </tr>
+                    <tr>
+                        <td>Fulano de Tal</td>
+                        <td>(99) 9.8765-4321</td>
+                    </tr>
+                    <tr>
+                        <td>Fulano de Tal</td>
+                        <td>(99) 9.8765-4321</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
